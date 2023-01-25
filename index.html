@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Button game</title>
+  </head>
+  <body>
+    <div class="container">     
+    <div style="position: relative; height: 100%;">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, +20%);">
+            <div class="card">
+                <div class="card-body">
+                  <style>
+                  p {text-align: center;}
+                  </style>
+                  <p style="font-family:verdana">CLICK THE BUTTON</p>
+                  <link rel="stylesheet" href="style.css">
+                  <button id="button1" class ="btn btn-primary" onclick="startRandom(this)">BUTTON 1</button>
+                 <button id="button2" class ="btn btn-primary" onclick="startRandom(this)">BUTTON 2</button>
+                 <button id="button3" class ="btn btn-primary" onclick="startRandom(this)">BUTTON 3</button>
+                </div>
+              </div>
+              <br>
+              <div style="font-family:verdana" class="card">
+              <div id="message" style="text-align: center;">
+              </div>  
+              <button onClick="window.location.reload();">Reset</button>
+            </div>
+      <script src="script.js"></script>
+  </body>
+</html>
